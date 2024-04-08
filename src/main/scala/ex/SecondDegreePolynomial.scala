@@ -13,7 +13,7 @@ trait SecondDegreePolynomial:
 
 
 object SecondDegreePolynomial:
-  private case class SecondDegreePolynomialImpl(private val a: Double, private val b: Double, private val c: Double) extends SecondDegreePolynomial:
+  private case class SecondDegreePolynomialImpl(a: Double, b: Double, c: Double) extends SecondDegreePolynomial:
     override def constant: Double = c
 
     override def firstDegree: Double = b
